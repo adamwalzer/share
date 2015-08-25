@@ -1,0 +1,12 @@
+<template name="account">
+	<div class="account">
+		<form action="account-submit" method="post" accept-charset="utf-8">
+			<input type="email" name="email" placeholder="{{emailPlaceholder}}" />
+			<input type="test" name="first-name" placeholder="{{firstNamePlaceholder}}" />
+			<input type="test" name="last-name" placeholder="{{lastNamePlaceholder}}" />
+			<input type="test" name="display-name" placeholder="{{displayNamePlaceholder}}" />
+			<button type="submit">update</button>
+		</form>
+		<input type="file" name="profile-picture" class="profile-picture-input">
+	</div>
+</template>

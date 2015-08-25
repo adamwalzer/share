@@ -1,0 +1,16 @@
+header {
+	display: block;
+	background-color: $main-color;
+	color: $white;
+	line-height: $extra-large + 20px;
+	vertical-align: middle;
+	min-height: 45px;
+	@include clearfix;
+	clear: both;
+
+	h1 {
+		font-size: $extra-large;
+		float: left;
+		padding-left: 10px;
+	}
+}

@@ -1,0 +1,13 @@
+<template name="recentConversations">
+	<h2>Recent Conversations</h2>
+	<ul>
+		{{#each conversations}}
+			<li>
+				<a href="" class="open-conversation" data-conversation-id="{{this._id}}">
+					{{conversationTitle}}
+				</a>
+				<span class="close">X</span>
+			</li>
+		{{/each}}
+	</ul>
+</template>

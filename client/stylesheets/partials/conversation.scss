@@ -1,0 +1,29 @@
+.conversation {
+	.title {
+		position: relative;
+		h3 {
+			position: relative;
+			z-index: 1;
+			cursor: pointer;
+			opacity: 1;
+			@include transition(opacity $fast);
+		}
+		input {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 0;
+			opacity: 0;
+			@include transition(opacity $fast, z-index 0s $fast);
+		}
+		&.active {
+			h3 {
+				opacity: 0;
+			}
+			input {
+				z-index: 2;
+				opacity: 1;
+			}
+		}
+	}
+}

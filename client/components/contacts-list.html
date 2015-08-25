@@ -1,0 +1,10 @@
+<template name="contactsList">
+  <div class="contacts-list">
+    {{> contactSearchForm}}
+    <ul class="contacts">
+      {{ #each contacts }}
+        {{> contactLI}}
+      {{ /each }}
+    </ul>
+  </div>
+</template>

@@ -1,0 +1,57 @@
+.welcome {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+
+	span {
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+	.profile-image-container {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		vertical-align: middle;
+		width: 100%;
+		height: $extra-large + 20px;
+		background-color: $white;
+		@include transition(left 2*$slow);
+
+		&.active {
+			left: 0 !important;
+			@include transition(left 2*$fast);
+		}
+
+		img {
+			width: auto;
+			height: auto;
+			max-width: 20%;
+			max-height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+		}
+
+		.actions {
+			position: relative;
+			width: 100%;
+			z-index: 1;
+		}
+	}
+
+	.account {
+		position: relative;
+		overflow: hidden;
+		max-height: 0;
+		@include transition(max-height .5s);
+		&.active {
+			max-height: 200px;
+			@include transition(max-height .25s);
+		}
+	}
+}

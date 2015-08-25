@@ -1,0 +1,11 @@
+<template name="contactSearchForm">
+	<form action="" method="get" accept-charset="utf-8">
+		<input type="text" class="contact-name" name="contact-name" />
+		<a class="clear-contact-name">X</a>
+	</form>
+	<ul class="search-results">
+		{{ #each searchResults }}
+			{{> searchContactLI }}
+		{{ /each }}
+	</ul>
+</template>

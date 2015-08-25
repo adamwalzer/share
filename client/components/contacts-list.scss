@@ -1,0 +1,17 @@
+.contacts-list {
+	position: relative;
+
+	.contact-name {
+		width: 100%;
+		line-height: 30px;
+		padding-left: 10px;
+		padding-right: 40px;
+	}
+
+	.clear-contact-name {
+		position: absolute;
+		top: 0;
+		right: 15px;
+		line-height: 36px;
+	}
+}

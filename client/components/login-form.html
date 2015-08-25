@@ -1,0 +1,11 @@
+<template name="loginForm">
+	<form id="login-form" action="action">
+		<h2>Login</h2>
+		<input type="email" id="login-email" placeholder="email" />
+		<input type="password" id="login-password" placeholder="password" />
+		<input type="submit" id="login-button" value="Sign in" />
+		<div class="login-error">
+			{{loginError}}
+		</div>
+	</form> 
+</template>

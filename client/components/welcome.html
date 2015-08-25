@@ -1,0 +1,15 @@
+<template name="welcome">
+	<div class="welcome">
+		<span>
+			{{name currentUser=currentUser}}
+		</span>
+		<div class="profile-image-container">
+			<img src="{{profileImage}}" alt="">
+			<div class="actions">
+				<a href="account">Account</a>
+				<a href="logout">Logout</a>
+			</div>
+		</div>
+		{{> account}}
+	</div>
+</template>

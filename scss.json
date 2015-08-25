@@ -1,0 +1,8 @@
+{
+  "includePaths": [
+    ".meteor/local/build/programs/server/assets/packages/wolves_bourbon"
+  ],
+  "sourcemap": true,
+  "useIndex" : true,
+  "indexFilePath" : "client/stylesheets/main.scss"
+}

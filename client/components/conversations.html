@@ -1,0 +1,10 @@
+<template name="conversations">
+	<h2>Open Conversations</h2>
+	<ul>
+		{{#each openConversations}}
+			<li>
+				{{> conversation conversationId=this}}
+			</li>
+		{{/each}}
+	</ul>
+</template>

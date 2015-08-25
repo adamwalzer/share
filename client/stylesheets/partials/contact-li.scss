@@ -1,0 +1,25 @@
+.contact {
+
+	&.show {
+		opacity: 1;
+		max-height: 200px;
+		@include transition(opacity $fast $fast, max-height $fast);
+	}
+
+	&.hide {
+		opacity: 0;
+		max-height: 0;
+		@include transition(opacity $fast, max-height $fast $fast);
+	}
+
+	.contact-conversations, .profile {
+		overflow: hidden;
+		max-height: 0;
+		@include transition(max-height $slow);
+
+		&.active {
+			max-height: 200px;
+			@include transition(max-height $fast);
+		}
+	}
+}

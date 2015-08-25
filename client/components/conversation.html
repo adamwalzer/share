@@ -1,0 +1,15 @@
+<template name="conversation">
+	<div class="conversation convo-{{conversationId}}">
+		<div class="title">
+			<h3>{{conversationTitle}}</h3>
+			<input type="text" value="{{conversationTitle}}">
+		</div>
+		<span class="close">X</span>
+		<ul>
+			{{#each messages}}
+				<li><strong>{{name}}:</strong> {{message}}</li>
+			{{/each}}
+		</ul>
+		<input type="text" class="message">
+	</div>
+</template>

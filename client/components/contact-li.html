@@ -1,0 +1,30 @@
+<template name="contactLI">
+	{{#if this}}
+		<li class="contact {{class}}" data-contact-id="{{contactID}}">
+			{{ nickname }}
+			<a class="show-conversations" href="show-conversations">chats</a>
+			<a class="show-profile" href="show-profile">profile</a>
+			<a class="delete" href="delete-contact">X</a>
+			<ul class="contact-conversations">
+				{{#each showConversations}}
+					<li class="conversation" data-conversation-id="{{_id}}">
+						<a href="">{{conversationTitle}}</a>
+						<span class="delete">X</span>
+					</li>
+				{{/each}}
+				<li>
+					<a href="" class="start-conversation">new chat</a>
+				</li>
+			</ul>
+			<div class="profile">
+				<form class="update-nickname" action="update-nickname" method="push" accept-charset="utf-8">
+					<label>nickname:</label> <input placeholder="nickname" value="{{nickname}}" /> <button type="">update</button>
+				</form>
+				<label>display name:</label> <span>{{displayName}}</span>
+				<label>first name:</label> <span>{{firstName}}</span>
+				<label>last name:</label> <span>{{lastName}}</span>
+				<label>email:</label> <span>{{email}}</span>
+			</div>
+		</li>
+	{{/if}}
+</template>
